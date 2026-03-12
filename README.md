@@ -1,5 +1,6 @@
-# MARL-HeteroUAVSwarm
-Code for the project: The dynamic collaborative awareness and path planning of Heterogeneous UAV swarm under telecommunication limitations based on MARL.  
+# MARL-HeteroUAVs
+
+Code for the project: The dynamic collaborative perception and path planning of Heterogeneous UAVs  under telecommunication limitations based on MARL.  
 
 This is an ongoing research project. Code and experimental results are **subject to change**.
 
@@ -15,35 +16,26 @@ This is an ongoing research project. Code and experimental results are **subject
 
 ```
 MARL-HeteroUAVSwarm/
-├── coverage_calcukate_test/    # Initial coverage calculation code
-│	├── coverage_calculate.py
-│	├── position_and_distance.py
-│	├── main.py
-│	├── READMA.md
-├── Singal_UAV 					# A test singal-uav simulation enviroment.
-│	├── main.py
-│	├── env/
-│	│	├── env.py
-│	├── requirements.txt
-│	├── README.md
-├── marl_uav.py  				# Main code of our project
-	├── env/
-	│	├── config.py
-	│	├── core.py
-	│	├── cover_scan.py
-	│	├── test_env.py
-	│	├── scenarios/
-	│		├── uav_mission.py
-	├── algorithms/
-	│	├── modules.py
-    │   ├── masac.py
-    │   ├── mappo.py
-    │   ├── buffer.py
-    ├── scripts/
-    │	├── wariting to be developed……
-    ├── results/
-    │	├── wariting to be developed……
-    ├── requirements.txt
+├── algorithms/
+│   ├── __init__.py
+│   ├── buffer.py
+│   ├── mappo.py
+│   ├── masac.py
+│   └── modules.py
+├── results/
+├── rl_env/
+│   ├── __init__.py
+│   ├── config.py
+│   ├── core.py
+│   ├── cover_scan.py
+│   ├── test_env.py
+│   └── scenarios/
+│       ├── __init__.py
+│       └── uav_mission.py
+├── scripts/
+│   └── __init__.py
+├── README.md
+└── requirements.txt
 ```
 
 
